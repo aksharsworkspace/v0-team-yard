@@ -30,6 +30,11 @@ export default function ProcessPage() {
             label: "Previous — 02",
             title: "Services",
           }}
+          next={{
+            href: "/discovery",
+            label: "Next — 04",
+            title: "Discovery",
+          }}
         />
         <Footer />
       </PageTransition>

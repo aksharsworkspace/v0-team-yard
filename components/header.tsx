@@ -45,7 +45,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <Link
-              href="/#contact"
+              href="/discovery"
               className="text-sm bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-all duration-500"
             >
               Get in touch
@@ -79,7 +79,7 @@ export function Header() {
               </Link>
             ))}
             <Link
-              href="/#contact"
+              href="/discovery"
               onClick={() => setIsOpen(false)}
               className="text-sm bg-primary text-primary-foreground px-4 py-3 rounded-md hover:opacity-90 transition-opacity text-center"
             >

@@ -37,7 +37,7 @@ export function CTA() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <Link
-              href="mailto:hello@theyard.studio"
+              href="/discovery"
               className="group flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md hover:bg-accent hover:text-accent-foreground transition-all duration-500"
             >
               Book a Discovery Call

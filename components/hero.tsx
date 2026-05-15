@@ -70,7 +70,7 @@ export function Hero() {
             <ArrowRight className="h-4 w-4 transition-transform duration-500 group-hover:translate-x-1" />
           </Link>
           <Link
-            href="/#contact"
+            href="/discovery"
             className="group flex items-center gap-2 border border-border px-7 py-3.5 rounded-md hover:border-accent hover:text-accent transition-all duration-500"
           >
             Book a Discovery Call
