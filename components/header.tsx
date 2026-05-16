@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
-  { href: "#abot", label: "About" },
+  { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#process", label: "Process" },
   { href: "#philosophy", label: "Philosophy" },
