@@ -23,7 +23,7 @@ export function About() {
           >
             <div className="aspect-[3/4] overflow-hidden rounded-2xl grayscale hover:grayscale-0 transition-all duration-700">
               <img
-                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&q=80"
+                src="/placeholder.svg"
                 alt="Founders"
                 className="w-full h-full object-cover"
               />

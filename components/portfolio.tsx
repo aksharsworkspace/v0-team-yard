@@ -12,7 +12,7 @@ const caseStudies = [
     title: "Quantum Computing Infrastructure",
     client: "Qubit",
     industry: "Deep Tech",
-    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80",
+    image: "/placeholder.svg",
     overview: "Led the $15M Series A for a team building fault-tolerant quantum processors.",
     results: [
       "Secured 3 enterprise pilots",
@@ -25,7 +25,7 @@ const caseStudies = [
     title: "Next-Gen Carbon Capture",
     client: "AeroCleanse",
     industry: "Climate Tech",
-    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80",
+    image: "/placeholder.svg",
     overview: "Co-led $8M Seed round to scale direct air capture technology.",
     results: [
       "Deployed first commercial unit",
@@ -38,7 +38,7 @@ const caseStudies = [
     title: "AI-Driven Drug Discovery",
     client: "BioSynthetix",
     industry: "Biotech",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9db61b7f5?w=800&q=80",
+    image: "/placeholder.svg",
     overview: "Participated in $25M Series B to accelerate clinical trials for novel therapeutics.",
     results: [
       "FDA Fast Track designation achieved",
