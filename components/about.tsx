@@ -40,18 +40,18 @@ export function About() {
             className="flex flex-col justify-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-8">
-              We build alongside those building the future.
+              Why we exist
             </h2>
             
             <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
               <p>
-                Founded by operators who have taken companies from zero to IPO, we understand the immense pressure and profound isolation of building a category-defining company.
+                We noticed a pattern: great companies were struggling to tell their stories consistently. Not for lack of ideas or talent, but for lack of underlying structure.
               </p>
               <p>
-                Our philosophy is simple: provide concentrated capital, unmatched strategic clarity, and access to a network that actually moves the needle. We don't just sit on boards; we get in the trenches when you need us, and stay out of your way when you don't.
+                The Yard was founded to bridge the gap between creative ambition and strategic execution. We believe that strategy is not a luxury—it is the difference between content that fades and content that endures.
               </p>
               <p>
-                We look for outliers. The misfits, the visionaries, the founders whose ambition scares them just a little. If that sounds like you, we should talk.
+                We work alongside founders and leaders to build frameworks that bring clarity to chaos, transforming ad-hoc production into sustainable editorial engines.
               </p>
             </div>
 

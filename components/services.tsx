@@ -7,37 +7,37 @@ import { ArrowUpRight, BarChart, Lightbulb, Zap } from "lucide-react"
 
 const services = [
   {
-    title: "Seed & Early Stage",
-    description: "We lead or co-lead Seed and Series A rounds, providing the foundational capital visionary founders need to scale.",
+    title: "Content Strategy & Architecture",
+    description: "We design comprehensive frameworks tailored to your needs—content pillars, editorial systems, and publishing rhythms that make sense for your brand.",
     deliverables: [
-      "Capital deployment",
-      "Strategic board roles",
-      "Key hires network access",
-      "Subsequent fundraising prep"
+      "Content pillars & themes",
+      "Editorial workflows",
+      "Distribution blueprints",
+      "Strategic roadmaps"
     ],
     icon: <Zap className="w-5 h-5" />,
     className: "md:col-span-2"
   },
   {
-    title: "Strategic Advisory",
-    description: "Beyond capital, we provide hands-on guidance for product positioning and go-to-market strategy.",
+    title: "Executive Ghostwriting",
+    description: "We help leaders articulate their vision, writing high-impact thought leadership content that builds industry authority.",
     deliverables: [
-      "Product strategy",
-      "Market expansion",
-      "Brand positioning",
-      "Growth marketing"
+      "Founder narratives",
+      "Opinion editorials",
+      "LinkedIn strategy",
+      "Keynote speeches"
     ],
     icon: <Lightbulb className="w-5 h-5" />,
     className: "md:col-span-1"
   },
   {
-    title: "Growth Network",
-    description: "Access our exclusive network of operators, subject matter experts, and potential enterprise customers.",
+    title: "Editorial Management",
+    description: "We step in as your fractional editorial team, delivering actionable documentation and managing the end-to-end publishing process.",
     deliverables: [
-      "Executive talent pool",
-      "Enterprise introductions",
-      "Peer founder community",
-      "Operational playbooks"
+      "Calendar management",
+      "Writer sourcing",
+      "Quality assurance",
+      "Performance reporting"
     ],
     icon: <BarChart className="w-5 h-5" />,
     className: "md:col-span-3"
@@ -59,10 +59,10 @@ export function Services() {
           className="mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6 text-foreground">
-            Our Focus Areas
+            Our Services
           </h2>
           <p className="text-lg text-muted-foreground font-light max-w-xl">
-            We provide more than just capital. We bring a high-conviction approach to supporting the next wave of category creators.
+            We provide more than just strategy. We step in to bridge the gap between creative ambition and strategic execution.
           </p>
         </motion.div>
 

@@ -26,10 +26,10 @@ export function CTA() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight mb-8">
-            Building the next <br className="hidden md:block" /> category creator?
+            Ready to build a content <br className="hidden md:block" /> engine that lasts?
           </h2>
           <p className="text-xl text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
-            We are actively looking for visionary founders who are ready to redefine industries. Let's build the future together.
+            We work with founders and brand leaders who understand that strategic clarity is the foundation of great content. Let&apos;s start the conversation.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -37,7 +37,7 @@ export function CTA() {
               href="#pitch"
               className="group flex items-center justify-center gap-3 bg-foreground text-background px-10 py-5 rounded-full font-medium hover:scale-105 transition-all duration-300 w-full sm:w-auto shadow-[0_0_30px_5px_rgba(255,255,255,0.05)] hover:shadow-[0_0_40px_10px_rgba(255,255,255,0.1)]"
             >
-              Pitch Us
+              Book a Discovery Call
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </div>

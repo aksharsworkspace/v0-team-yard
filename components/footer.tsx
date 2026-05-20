@@ -7,10 +7,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-20">
           <div className="md:col-span-1">
             <Link href="/" className="text-2xl font-bold tracking-tighter inline-block mb-6">
-              VENTURE<span className="text-muted-foreground">.</span>
+              THE YARD<span className="text-muted-foreground">.</span>
             </Link>
             <p className="text-muted-foreground text-sm font-light leading-relaxed max-w-xs">
-              Backing the outliers, misfits, and visionaries building the next generation of category-defining companies.
+              A strategic content consultancy partnering with founders and marketing teams.
             </p>
           </div>
           
@@ -54,7 +54,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs font-light">
-            © {new Date().getFullYear()} Venture Capital. All rights reserved.
+            © {new Date().getFullYear()} The Yard. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors text-xs font-light">Privacy Policy</Link>

@@ -31,7 +31,7 @@ export function Hero() {
           className="mb-16"
         >
           <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">
-            Social Impact Capital
+            The Yard
           </p>
 
           <motion.h1
@@ -40,9 +40,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
           >
-            Empowering the
+            We build
             <br />
-            next generation.
+            content systems
+            <br />
+            that endure.
           </motion.h1>
 
           <motion.p
@@ -51,7 +53,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-pretty font-light"
           >
-            We are the earliest investors in mission-driven founders, backing visionary teams building category-defining companies.
+            The Yard is a strategic content consultancy. We partner with founders and marketing teams to bring clarity to chaos and transform ad-hoc production into sustainable editorial engines.
           </motion.p>
         </motion.div>
 
