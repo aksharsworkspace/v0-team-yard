@@ -14,10 +14,7 @@ export function Logo({ className = "" }: { className?: string }) {
         <rect width="200" height="200" rx="42" fill="#F4F0E8"></rect>
         <rect width="200" height="200" fill="#0D0F18" clipPath="url(#c3)"></rect>
       </svg>
-      <div className="w-[1px] h-8 bg-foreground/10 shrink-0"></div>
-      <svg viewBox="0 0 180 86" className="w-24 md:w-32 shrink-0" xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="58" fontFamily="Helvetica, Arial, sans-serif" fontSize="42" fontWeight="800" fill="currentColor" className="fill-foreground" letterSpacing="-1">the yard</text>
-      </svg>
+
     </div>
   )
 }
