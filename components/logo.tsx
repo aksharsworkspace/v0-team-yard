@@ -15,8 +15,8 @@ export function Logo({ className = "" }: { className?: string }) {
             <rect x="32.5" y="8" width="15" height="35" rx="7.5" transform="rotate(180 40 43)" />
           </clipPath>
         </defs>
-        <rect width="80" height="80" rx="18" fill="#07090E" />
-        <rect width="80" height="80" fill="url(#g6)" clipPath="url(#c6)" />
+        <rect width="80" height="80" rx="18" fill="#F4F0E8" />
+        <rect width="80" height="80" fill="#0D0F18" clipPath="url(#c6)" />
       </svg>
       <div className="w-[1px] h-10 bg-white/10 shrink-0 hidden sm:block"></div>
       <svg viewBox="0 0 200 86" className="w-24 md:w-32 shrink-0 hidden sm:block" xmlns="http://www.w3.org/2000/svg">
