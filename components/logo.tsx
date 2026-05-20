@@ -3,20 +3,16 @@ import React from "react"
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-4 ${className}`}>
-      <svg viewBox="0 0 80 80" className="w-10 h-10 md:w-12 md:h-12 shrink-0" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 200 200" className="w-10 h-10 md:w-12 md:h-12 shrink-0" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#4AFFA8" />
-            <stop offset="100%" stopColor="#7B61FF" />
-          </linearGradient>
-          <clipPath id="c6">
-            <rect x="32.5" y="8" width="15" height="35" rx="7.5" transform="rotate(35 40 43)" />
-            <rect x="32.5" y="8" width="15" height="35" rx="7.5" transform="rotate(-35 40 43)" />
-            <rect x="32.5" y="8" width="15" height="35" rx="7.5" transform="rotate(180 40 43)" />
+          <clipPath id="c3">
+            <rect x="81" y="19" width="38" height="88" rx="19" transform="rotate(35 100 107)"></rect>
+            <rect x="81" y="19" width="38" height="88" rx="19" transform="rotate(-35 100 107)"></rect>
+            <rect x="81" y="19" width="38" height="88" rx="19" transform="rotate(180 100 107)"></rect>
           </clipPath>
         </defs>
-        <rect width="80" height="80" rx="18" fill="#F4F0E8" />
-        <rect width="80" height="80" fill="#0D0F18" clipPath="url(#c6)" />
+        <rect width="200" height="200" rx="42" fill="#F4F0E8"></rect>
+        <rect width="200" height="200" fill="#0D0F18" clipPath="url(#c3)"></rect>
       </svg>
       <div className="w-[1px] h-10 bg-white/10 shrink-0 hidden sm:block"></div>
       <svg viewBox="0 0 200 86" className="w-24 md:w-32 shrink-0 hidden sm:block" xmlns="http://www.w3.org/2000/svg">
