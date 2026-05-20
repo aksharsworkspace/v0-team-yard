@@ -10,42 +10,52 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 square 246);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.96 0.002 90);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.94 0.002 90);
   --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.55 0.05 30);
-  --accent-foreground: oklch(1 0 0);
+  --accent: oklch(0.55 0.05 250);
+  --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
   --border: oklch(0.88 0.002 90);
   --input: oklch(0.92 0 0);
-  --ring: oklch(0.145 0 0);
+  --ring: oklch(0.205 0 square 246);
   --radius: 0.25rem;
+
+  /* Premium gradient definitions */
+  --primary-gradient: oklch(0.205 0 square 246) oklch(0.265 0.15 square 262) oklch(0.325 0.2 square 278);
+  --secondary-gradient: oklch(0.96 0.002 90) oklch(0.9 0.004 80) oklch(0.85 0.003 70);
+  --accent-gradient: oklch(0.55 0.05 250) oklch(0.6 0.08 20) oklch(0.65 0.1 350);
 }
 
 .dark {
-  --background: oklch(0.12 0 0);
-  --foreground: oklch(0.94 0.002 90);
-  --card: oklch(0.16 0 0);
-  --card-foreground: oklch(0.94 0.002 90);
-  --popover: oklch(0.16 0 0);
-  --popover-foreground: oklch(0.94 0.002 90);
-  --primary: oklch(0.94 0.002 90);
-  --primary-foreground: oklch(0.12 0 0);
-  --secondary: oklch(0.22 0 0);
-  --secondary-foreground: oklch(0.94 0.002 90);
-  --muted: oklch(0.22 0 0);
-  --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.65 0.05 30);
-  --accent-foreground: oklch(0.12 0 0);
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+  --card: #111111;
+  --card-foreground: #FFFFFF;
+  --popover: #111111;
+  --popover-foreground: #FFFFFF;
+  --primary: #FFFFFF;
+  --primary-foreground: #0A0A0A;
+  --secondary: #111111;
+  --secondary-foreground: #FFFFFF;
+  --muted: #111111;
+  --muted-foreground: #A1A1AA;
+  --accent: #111111;
+  --accent-foreground: #FFFFFF;
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.28 0 0);
-  --input: oklch(0.22 0 0);
-  --ring: oklch(0.94 0.002 90);
+  --border: #222222;
+  --input: #111111;
+  --ring: #A1A1AA;
+
+  /* Premium gradient definitions for dark mode */
+  --primary-gradient: oklch(0.94 0.002 90) oklch(0.8 0.02 260) oklch(0.7 0.04 280);
+  --secondary-gradient: oklch(0.22 0 0) oklch(0.28 0.004 90) oklch(0.32 0.003 100);
+  --accent-gradient: oklch(0.65 0.05 250) oklch(0.55 0.08 20) oklch(0.5 0.1 350);
 }
 
 @theme inline {
@@ -75,6 +85,34 @@
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Premium typography scale */
+  --font-display: var(--font-sans);
+  --font-heading: var(--font-sans);
+  --font-body: var(--font-sans);
+  --font-caption: var(--font-sans);
+
+  /* Text styles */
+  --text-display: var(--font-display) var(--font-display-size) var(--font-display-line-height);
+  --text-heading: var(--font-heading) var(--font-heading-size) var(--font-heading-line-height);
+  --text-body: var(--font-body) var(--font-body-size) var(--font-body-line-height);
+  --text-caption: var(--font-caption) var(--font-caption-size) var(--font-caption-line-height);
+
+  /* Display text sizes */
+  --font-display-size: 3.5rem; /* 56px */
+  --font-display-line-height: 1.1;
+
+  /* Heading sizes */
+  --font-heading-size: 2.25rem; /* 36px */
+  --font-heading-line-height: 1.2;
+
+  /* Body text sizes */
+  --font-body-size: 1rem; /* 16px */
+  --font-body-line-height: 1.6;
+
+  /* Caption text sizes */
+  --font-caption-size: 0.75rem; /* 12px */
+  --font-caption-line-height: 1.4;
 }
 
 @layer base {
@@ -86,5 +124,150 @@
   }
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Premium spacing system based on 8px grid */
+  .px-6 {
+    @apply px-6 lg:px-8;
+  }
+
+  .py-32 {
+    @apply py-32 lg:py-48;
+  }
+
+  .mb-16 {
+    @apply mb-16 lg:mb-24;
+  }
+
+  .gap-6 {
+    @apply gap-6 lg:gap-12;
+  }
+
+  .gap-8 {
+    @apply gap-8 lg:gap-16;
+  }
+
+  /* Container enhancements */
+  .container {
+    @apply max-w-7xl mx-auto px-6 sm:px-6 lg:px-8;
+  }
+
+  /* Premium transitions */
+  .transition-premium {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .hover-premium {
+    @apply hover:translate-y-[-2px] hover:shadow-md duration-300;
+  }
+
+  /* Premium focus rings */
+  .focus-premium {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+  }
+
+  /* Premium animations */
+  .animate-pulse-slow {
+    @apply animate-[pulse_6s_ease-in-out_infinite];
+  }
+
+  .animate-float {
+    @apply animate-[float_6s_ease-in-out_infinite];
+  }
+
+  .animate-bg-shift {
+    @apply animate-[shift_20s_linear_infinite];
+  }
+}
+
+@layer utilities {
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-bg-shift {
+    animation: shift 20s linear infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+@layer utilities {
+  /* Premium spacing system based on 8px grid */
+  .px-6 {
+    @apply px-6 lg:px-8;
+  }
+
+  .py-32 {
+    @apply py-32 lg:py-48;
+  }
+
+  .mb-16 {
+    @apply mb-16 lg:mb-24;
+  }
+
+  .gap-6 {
+    @apply gap-6 lg:gap-12;
+  }
+
+  .gap-8 {
+    @apply gap-8 lg:gap-16;
+  }
+
+  /* Container enhancements */
+  .container {
+    @apply max-w-7xl mx-auto px-6 sm:px-6 lg:px-8;
+  }
+
+  /* Premium transitions */
+  .transition-premium {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .hover-premium {
+    @apply hover:translate-y-[-2px] hover:shadow-md duration-300;
+  }
+
+  /* Premium focus rings */
+  .focus-premium {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
   }
 }

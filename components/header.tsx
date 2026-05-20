@@ -6,10 +6,10 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
-  { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
-  { href: "#philosophy", label: "Philosophy" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#about", label: "About" },
+  { href: "#testimonials", label: "Testimonials" },
 ]
 
 export function Header() {
@@ -18,8 +18,8 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-lg font-medium tracking-tight">
-          The Yard
+        <Link href="/" className="text-xl font-bold tracking-tighter">
+          VENTURE<span className="text-muted-foreground">.</span>
         </Link>
 
         {/* Desktop Navigation */}
