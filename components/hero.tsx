@@ -87,10 +87,10 @@ export function Hero() {
           <p className="text-sm text-muted-foreground">Trusted by industry leaders</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-50 grayscale">
             {/* Placeholder trust indicator logos */}
-            <div className="text-xl font-bold font-serif">ACME Corp</div>
-            <div className="text-xl font-bold font-serif">Stark Industries</div>
-            <div className="text-xl font-bold font-serif">Wayne Ent.</div>
-            <div className="text-xl font-bold font-serif">Cyberdyne</div>
+            <div className="text-lg font-medium tracking-widest uppercase text-muted-foreground">Placeholder</div>
+            <div className="text-lg font-medium tracking-widest uppercase text-muted-foreground">Placeholder</div>
+            <div className="text-lg font-medium tracking-widest uppercase text-muted-foreground">Placeholder</div>
+            <div className="text-lg font-medium tracking-widest uppercase text-muted-foreground">Placeholder</div>
           </div>
         </motion.div>
 
