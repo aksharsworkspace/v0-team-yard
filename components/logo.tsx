@@ -27,9 +27,9 @@ export function Logo({ className = "" }: { className?: string }) {
             <stop offset="100%" stopColor="#7B61FF" stopOpacity=".05" />
           </linearGradient>
         </defs>
-        <text x="2" y="22" fontFamily="Helvetica, Arial, sans-serif" fontSize="10" fontWeight="400" fill="rgba(255,255,255,.35)" letterSpacing="4">THE</text>
+        <text x="2" y="22" fontFamily="Helvetica, Arial, sans-serif" fontSize="10" fontWeight="400" fill="rgba(255,255,255,.5)" letterSpacing="4">THE</text>
         <line x1="2" y1="29" x2="198" y2="29" stroke="url(#g7l)" strokeWidth=".8" />
-        <text x="0" y="80" fontFamily="Helvetica, Arial, sans-serif" fontSize="59" fontWeight="800" fill="url(#g7)" letterSpacing="-1.5">YARD</text>
+        <text x="0" y="80" fontFamily="Helvetica, Arial, sans-serif" fontSize="59" fontWeight="800" fill="#FFFFFF" letterSpacing="-1.5">YARD</text>
       </svg>
     </div>
   )
