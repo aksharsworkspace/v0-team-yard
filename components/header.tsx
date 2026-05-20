@@ -3,6 +3,7 @@
 import { ThemeToggle } from "./theme-toggle"
 import Link from "next/link"
 import { useState } from "react"
+import { Logo } from "./logo"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
@@ -18,8 +19,8 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tighter">
-          THE YARD<span className="text-muted-foreground">.</span>
+        <Link href="/" className="hover:opacity-80 transition-opacity">
+          <Logo />
         </Link>
 
         {/* Desktop Navigation */}
