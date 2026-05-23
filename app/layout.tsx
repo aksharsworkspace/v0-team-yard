@@ -1,22 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter, Syne } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: '--font-inter'
-})
-
-const syne = Syne({
-  subsets: ["latin"],
-  variable: '--font-syne'
-})
-
 export const metadata: Metadata = {
-  title: 'Premium SaaS & VC Template',
-  description: 'A cinematic, premium SaaS and Venture Capital style website.',
+  title: 'The Yard',
+  description: 'We build content systems that endure.',
 }
 
 export default function RootLayout({
@@ -26,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="bg-background dark">
-      <body className={`${inter.variable} ${syne.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

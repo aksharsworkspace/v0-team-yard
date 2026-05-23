@@ -3,63 +3,53 @@ import { Logo } from "./logo"
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border/30 pt-20 pb-10 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-20">
+    <footer className="bg-[var(--ty-black)] py-12">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Left: Logo and description */}
           <div className="md:col-span-1">
-            <Link href="/" className="inline-block mb-8 hover:opacity-80 transition-opacity">
+            <Link href="/" className="inline-block mb-4 hover:opacity-80 transition-opacity">
               <Logo />
             </Link>
-            <p className="text-muted-foreground text-sm font-light leading-relaxed max-w-xs">
+            <p className="text-[var(--ty-cream)] text-sm font-[DM_Sans] font-[300] leading-relaxed max-w-xs">
               A strategic content consultancy partnering with founders and marketing teams.
             </p>
           </div>
-          
+
+          {/* Middle: Services links */}
           <div>
-            <h4 className="font-medium mb-6 uppercase tracking-wider text-xs text-foreground/80">Firm</h4>
-            <ul className="space-y-4">
-              <li><Link href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Portfolio</Link></li>
-              <li><Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Team</Link></li>
-              <li><Link href="#approach" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Approach</Link></li>
-              <li><Link href="#careers" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Careers</Link></li>
+            <h4 className="font-[DM_Sans] font-[500] mb-4 uppercase tracking-wider text-xs text-[var(--ty-muted)]">
+              Services
+            </h4>
+            <ul className="space-y-2">
+              <li><Link href="#services" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">Content Strategy</Link></li>
+              <li><Link href="#services" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">Ghostwriting</Link></li>
+              <li><Link href="#services" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">Editorial Management</Link></li>
             </ul>
           </div>
-          
+
+          {/* Right: Connect links */}
           <div>
-            <h4 className="font-medium mb-6 uppercase tracking-wider text-xs text-foreground/80">Connect</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Twitter / X</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">LinkedIn</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Substack</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-light">Contact</a></li>
+            <h4 className="font-[DM_Sans] font-[500] mb-4 uppercase tracking-wider text-xs text-[var(--ty-muted)]">
+              Connect
+            </h4>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">Twitter / X</a></li>
+              <li><a href="#" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">LinkedIn</a></li>
+              <li><a href="#" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">Substack</a></li>
+              <li><a href="#" className="text-[var(--ty-cream)] hover:text-[var(--ty-accent)] transition-colors text-sm font-[DM_Sans] font-[400]">Contact</a></li>
             </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-medium mb-6 uppercase tracking-wider text-xs text-foreground/80">Newsletter</h4>
-            <p className="text-muted-foreground text-sm font-light mb-4">
-              Insights on company building, straight to your inbox.
-            </p>
-            <form className="flex gap-2">
-              <input 
-                type="email" 
-                placeholder="Email address" 
-                className="bg-secondary/50 border border-border/50 rounded-lg px-4 py-2 text-sm w-full focus:outline-none focus:border-foreground/50 transition-colors placeholder:text-muted-foreground/50"
-              />
-              <button className="bg-foreground text-background px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
-        
-        <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-xs font-light">
+
+        {/* Copyright bar at bottom */}
+        <div className="mt-8 pt-6 border-t border-[var(--ty-muted)]/20 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-[var(--ty-muted)] text-xs font-[DM_Sans] font-[300]">
             © {new Date().getFullYear()} The Yard. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors text-xs font-light">Privacy Policy</Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors text-xs font-light">Terms of Service</Link>
+          <div className="flex gap-4 text-[var(--ty-muted)] text-xs font-[DM_Sans] font-[300]">
+            <Link href="#" className="hover:text-[var(--ty-accent)] transition-colors">Privacy Policy</Link>
+            <Link href="#" className="hover:text-[var(--ty-accent)] transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

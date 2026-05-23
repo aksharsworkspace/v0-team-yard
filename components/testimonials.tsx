@@ -1,79 +1,51 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { Quote } from "lucide-react"
-
 const testimonials = [
   {
     quote: "They didn't just write a check. They helped us rewrite our entire go-to-market playbook. Their operational experience is unmatched in the venture space.",
-    author: "Sarah Chen",
-    role: "CEO, Nexus Innovations",
-    company: "Series B"
+    name: "Sarah Chen",
+    title: "CEO, Nexus Innovations",
   },
   {
     quote: "The clarity they brought to our product strategy in the early days was the difference between failing fast and finding true product-market fit.",
-    author: "Marcus Thorne",
-    role: "Founder, FlowSync",
-    company: "Acquired by Salesforce"
+    name: "Marcus Thorne",
+    title: "Founder, FlowSync",
   },
   {
     quote: "When things got hard, they were the first call I made. Having investors who have actually built companies before changes the entire dynamic.",
-    author: "Elena Rodriguez",
-    role: "CEO, Veridian Health",
-    company: "Series C"
+    name: "Elena Rodriguez",
+    title: "CEO, Veridian Health",
   }
 ]
 
 export function Testimonials() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
-
   return (
-    <section className="py-32 px-6 bg-background">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 text-center"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6">
+    <section id="testimonials" className="py-16 bg-[var(--ty-warm)] border-t border-[var(--ty-muted)]">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="mb-12 text-center">
+          <p className="eyebrow">Testimonials</p>
+          <h2 className="text-4xl md:text-5xl font-[Cormorant_Garamond] font-[300] italic text-[var(--ty-black)]">
             Founder Perspectives
           </h2>
-          <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--ty-muted)] max-w-2xl mx-auto">
             The true measure of a venture firm is what their founders say about them behind closed doors.
           </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-              transition={{ duration: 0.8, delay: 0.1 * (index + 1) }}
-              className="bg-secondary/20 border border-border/50 p-10 rounded-2xl flex flex-col relative overflow-hidden group"
-            >
-              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                <Quote className="w-24 h-24 text-foreground" />
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => {
+            const isLastColumn = index % 3 === 2;
+            return (
+              <div className={`relative p-6 ${!isLastColumn ? 'border-r border-[var(--ty-muted)]' : ''}`}>
+                <blockquote className="mb-6 text-[var(--ty-black)] leading-relaxed font-[Cormorant_Garamond] font-[300] italic">
+                  “{testimonial.quote}”
+                </blockquote>
+                <div className="space-y-2">
+                  <p className="font-[DM_Sans] font-[500] text-[var(--ty-black)]">{testimonial.name}</p>
+                  <p className="text-[var(--ty-muted)] font-[DM_Sans] font-[400]">{testimonial.title}</p>
+                </div>
               </div>
-              
-              <div className="flex-1 relative z-10">
-                <p className="text-lg leading-relaxed font-light text-foreground mb-8">
-                  "{testimonial.quote}"
-                </p>
-              </div>
-              
-              <div className="mt-auto relative z-10 pt-6 border-t border-border/30">
-                <h4 className="font-semibold text-foreground">{testimonial.author}</h4>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                <p className="text-xs font-medium uppercase tracking-wider text-accent/80 mt-2">{testimonial.company}</p>
-              </div>
-            </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
