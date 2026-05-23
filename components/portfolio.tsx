@@ -27,7 +27,7 @@ const workExamples = [
       "Reduced production time by 60%",
       "Improved conversion rates by 2.3x"
     ],
-    services": ["Editorial Management", "Content Operations", "Process Design"],
+    services: ["Editorial Management", "Content Operations", "Process Design"],
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const workExamples = [
       "Featured in TechCrunch and Wired",
       "Secured 3 major speaking invitations"
     ],
-    services": ["Ghostwriting", "Personal Branding", "Content Strategy"],
+    services: ["Ghostwriting", "Personal Branding", "Content Strategy"],
   }
 ]
 
